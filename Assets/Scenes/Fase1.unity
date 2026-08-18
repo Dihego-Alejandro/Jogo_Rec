@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 11838124}
   - component: {fileID: 11838123}
   - component: {fileID: 11838122}
+  - component: {fileID: 11838126}
   m_Layer: 0
   m_Name: ZonamortaCima
   m_TagString: DeathZone
@@ -225,12 +226,24 @@ Transform:
   m_GameObject: {fileID: 11838121}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.8823, y: 15.1, z: 5}
+  m_LocalPosition: {x: -6.176, y: 15.1, z: 8}
   m_LocalScale: {x: 14.310766, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11838126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11838121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0972d8682fc60d747ad9e0dcbee251d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ZonaMorte
 --- !u!1 &124077579
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,6 +318,99 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &187507665
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 187507668}
+  - component: {fileID: 187507667}
+  - component: {fileID: 187507666}
+  m_Layer: 0
+  m_Name: Terrain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!154 &187507666
+TerrainCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187507665}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_TerrainData: {fileID: 15600000, guid: 53a86fbe8c0229e4f9707acb24c28d99, type: 2}
+  m_EnableTreeColliders: 1
+--- !u!218 &187507667
+Terrain:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187507665}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_TerrainData: {fileID: 15600000, guid: 53a86fbe8c0229e4f9707acb24c28d99, type: 2}
+  m_TreeDistance: 5000
+  m_TreeBillboardDistance: 50
+  m_TreeCrossFadeLength: 5
+  m_TreeMaximumFullLODCount: 50
+  m_DetailObjectDistance: 80
+  m_DetailObjectDensity: 1
+  m_HeightmapPixelError: 5
+  m_SplatMapDistance: 1000
+  m_HeightmapMinimumLODSimplification: 0
+  m_HeightmapMaximumLOD: 0
+  m_ShadowCastingMode: 2
+  m_DrawHeightmap: 1
+  m_DrawInstanced: 0
+  m_DrawTreesAndFoliage: 1
+  m_StaticShadowCaster: 0
+  m_IgnoreQualitySettings: 0
+  m_ReflectionProbeUsage: 1
+  m_MaterialTemplate: {fileID: 2100000, guid: 594ea882c5a793440b60ff72d896021e, type: 2}
+  m_BakeLightProbesForTrees: 1
+  m_PreserveTreePrototypeLayers: 0
+  m_DeringLightProbesForTrees: 1
+  m_ReceiveGI: 1
+  m_ScaleInLightmap: 0.0256
+  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_GroupingID: 0
+  m_RenderingLayerMask: 1
+  m_AllowAutoConnect: 1
+  m_EnableHeightmapRayTracing: 1
+  m_EnableTreesAndDetailsRayTracing: 0
+  m_TreeMotionVectorModeOverride: 3
+--- !u!4 &187507668
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187507665}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -450, y: -19, z: -111}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -430,6 +536,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlappyPlayer
   forcaDoPulo: 7
+  modeloAviao: {fileID: 329311168}
+  anguloSubindo: -30
+  anguloCaindo: 20
+  velocidadeRotacao: 5
 --- !u!4 &329311168 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d01a8f0561494e34e8eb8d193b162192, type: 3}
@@ -454,8 +564,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.9493752, y: 1.4160292, z: 6.988815}
-  m_Center: {x: -0.05849848, y: 4.0857625, z: -0.5481991}
+  m_Size: {x: 1.9493752, y: 1.393418, z: 8.385068}
+  m_Center: {x: -0.058498483, y: 4.0970693, z: -0.5350297}
 --- !u!54 &329311170
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -481,7 +591,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 90
   m_CollisionDetection: 0
 --- !u!114 &329311171
 MonoBehaviour:
@@ -496,6 +606,103 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerDeath
   gameOver: {fileID: 1101001027}
+--- !u!82 &329311172
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329311166}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 8d22e98b8c2dcbd49a60461b0ce7b477, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 4.57514
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -792,11 +999,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d01a8f0561494e34e8eb8d193b162192, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5816301
+      value: 0.4992306
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d01a8f0561494e34e8eb8d193b162192, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.13
+      value: -6.176
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d01a8f0561494e34e8eb8d193b162192, type: 3}
       propertyPath: m_LocalPosition.y
@@ -874,6 +1081,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d01a8f0561494e34e8eb8d193b162192, type: 3}
       insertIndex: -1
       addedObject: {fileID: 329311171}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d01a8f0561494e34e8eb8d193b162192, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 329311172}
   m_SourcePrefab: {fileID: 100100000, guid: d01a8f0561494e34e8eb8d193b162192, type: 3}
 --- !u!1 &832575517
 GameObject:
@@ -998,14 +1208,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b9d3f20bbf4b2a4fa78fdb345b09683, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PipeSpawner
-  jogador: {fileID: 329311168}
   canoCima: {fileID: 6426786790874542409, guid: da6b323f9defc7e4cafdcfc55669666f, type: 3}
   canoBaixo: {fileID: 9201096647330783114, guid: 722ea00f783fcd74cb09e6420af83e2b, type: 3}
-  distanciaDoJogador: 50
-  alturaMinima: -2
-  alturaMaxima: 3
-  tamanhoDoBuraco: 18
-  intervalo: 4
+  distanciaX: 20
+  alturaMinima: -3
+  alturaMaxima: 4
+  tamanhoDoBuraco: 16
+  intervalo: 3
+  velocidadeCanos: 5
+  tempoParaDestruir: 15
 --- !u!4 &1532404227
 Transform:
   m_ObjectHideFlags: 0
@@ -1517,6 +1728,7 @@ GameObject:
   - component: {fileID: 2034211941}
   - component: {fileID: 2034211940}
   - component: {fileID: 2034211939}
+  - component: {fileID: 2034211943}
   m_Layer: 0
   m_Name: ZonamortaBaixo
   m_TagString: DeathZone
@@ -1611,12 +1823,24 @@ Transform:
   m_GameObject: {fileID: 2034211938}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.8823, y: -12.4, z: 5}
+  m_LocalPosition: {x: -6.176, y: -12.4, z: 8}
   m_LocalScale: {x: 16.285025, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2034211943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034211938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0972d8682fc60d747ad9e0dcbee251d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ZonaMorte
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1631,3 +1855,4 @@ SceneRoots:
   - {fileID: 1101001028}
   - {fileID: 11838125}
   - {fileID: 2034211942}
+  - {fileID: 187507668}

@@ -6,19 +6,11 @@ public class PlayerDeath : MonoBehaviour
 
     private bool morreu = false;
 
-    private void OnTriggerEnter(Collider other)
+    public void Morrer()
     {
         if (morreu)
             return;
 
-        if (other.CompareTag("Pipe") || other.CompareTag("DeathZone"))
-        {
-            Morrer();
-        }
-    }
-
-    void Morrer()
-    {
         morreu = true;
 
         Rigidbody rb = GetComponent<Rigidbody>();
@@ -35,5 +27,13 @@ public class PlayerDeath : MonoBehaviour
         }
 
         gameObject.SetActive(false);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Pipe"))
+        {
+            Morrer();
+        }
     }
 }

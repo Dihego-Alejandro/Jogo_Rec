@@ -83,6 +83,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 96b18d2791c84f74584d99e534c394ed, type: 3}
       insertIndex: -1
       addedObject: {fileID: -2387557945245990751}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 96b18d2791c84f74584d99e534c394ed, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -1242586487301316782}
   m_SourcePrefab: {fileID: 100100000, guid: 96b18d2791c84f74584d99e534c394ed, type: 3}
 --- !u!1 &6426786790874542409 stripped
 GameObject:
@@ -110,3 +113,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 3.359797, z: 1}
   m_Center: {x: 0, y: 0.13155441, z: 0}
+--- !u!114 &-1242586487301316782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6426786790874542409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1353f9612dd02b542ab1e949b085aa61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PipeMove
+  velocidade: 5
